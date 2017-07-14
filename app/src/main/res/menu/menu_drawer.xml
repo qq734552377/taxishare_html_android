@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/querry"
+        android:title="@string/search"
+        android:checked="true"
+        android:icon="@mipmap/search"/>
+
+    <item android:id="@+id/add"
+        android:title="@string/add"
+        android:checked="true"
+        android:icon="@mipmap/add"/>
+
+    <item android:id="@+id/setting"
+        android:title="@string/settings"
+        android:checked="true"
+        android:icon="@mipmap/download"/>
+</menu>
