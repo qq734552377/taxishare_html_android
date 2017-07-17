@@ -1,5 +1,6 @@
 package com.ucast.taxisharing.activity;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.View;
 import com.ucast.taxisharing.R;
 
 import org.xutils.view.annotation.ContentView;
+import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
@@ -36,5 +38,13 @@ public class RegistFirstActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+    }
+
+
+    @Event(R.id.regist_next)
+    private void goto_secondRegist(View v){
+
+        startActivity(new Intent(RegistFirstActivity.this, RegistSecondActivity.class));
+
     }
 }

@@ -28,4 +28,139 @@
 
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/idcard_forgrond_photo"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+                    <ImageButton
+                        android:id="@+id/regist_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/camera_grey"
+                        android:backgroundTint="#ffffff"
+                        android:padding="8dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+                    <ImageButton
+                        android:id="@+id/regist_album"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/album_grey"
+                        android:backgroundTint="#ffffff"
+                        android:padding="8dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/regist_photo_forground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/idcard_backgrond_photo"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+                    <ImageButton
+                        android:id="@+id/regist_camera_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/camera_grey"
+                        android:backgroundTint="#ffffff"
+                        android:padding="8dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+                    <ImageButton
+                        android:id="@+id/regist_album_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/album_grey"
+                        android:backgroundTint="#ffffff"
+                        android:padding="8dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/regist_photo_bacgroundground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/regist_to_server"
+                style="@style/FullScrennButton"
+                android:layout_marginTop="16dp"
+                android:text="@string/sign_in"
+                android:clickable="false"
+                android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
 </LinearLayout>

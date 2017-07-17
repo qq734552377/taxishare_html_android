@@ -33,6 +33,10 @@
     <string name="sex">性别</string>
     <string name="man">男</string>
     <string name="woman">女</string>
+    <string name="upload_photo">上传身份证照片</string>
+    <string name="idcard_forgrond_photo">请上传身份证前照</string>
+    <string name="idcard_backgrond_photo">请上传身份证后照</string>
+    <string name="nodata">没有数据</string>
 
 
 </resources>
