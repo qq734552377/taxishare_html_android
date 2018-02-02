@@ -100,16 +100,19 @@ public class LoginActivity extends AppCompatActivity implements MyHttpSucessCall
         String email = et_email.getText().toString().trim();
         String password = et_password.getText().toString().trim();
 
-
+        if (email.equals("")){
+            MyDialog.showDialog(this,getString(R.string.email_can_not_null));
+            return;
+        }
+        if(password.equals("")){
+            MyDialog.showDialog(this,getString(R.string.password_can_not_null));
+            return;
+        }
         String url = "http://192.168.0.56:12907/api/Login";
-
         Map<String,String> params=new HashMap<>();
         params.put("Email",email);
         params.put("Password",password);
-
-        MyXHttpRequest.postParamsRequest(this,url,params,this);
-
-
+        MyXHttpRequest.postParamsRequestNoToken(this,url,params,this);
     }
 
 

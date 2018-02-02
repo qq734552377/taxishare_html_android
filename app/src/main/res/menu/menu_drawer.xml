@@ -5,10 +5,10 @@
         android:checked="true"
         android:icon="@mipmap/search"/>
 
-    <item android:id="@+id/add"
-        android:title="@string/add"
+    <item android:id="@+id/account"
+        android:title="@string/account"
         android:checked="true"
-        android:icon="@mipmap/add"/>
+        android:icon="@mipmap/account"/>
 
     <item android:id="@+id/setting"
         android:title="@string/settings"

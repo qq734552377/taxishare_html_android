@@ -4,8 +4,8 @@ android {
     compileSdkVersion 26
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.ucast.taxisharing"
-        minSdkVersion 17
+        applicationId "com.ucast.taxishare"
+        minSdkVersion 21
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"

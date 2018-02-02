@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">TaxiSharing</string>
-    <string name="search">搜索</string>
+    <string name="app_name">TaxiShare</string>
+    <string name="app_packge_name">com.ucast.taxishare</string>
+    <string name="search">开始一个新的行程</string>
     <string name="add">添加</string>
+    <string name="account">我的账户</string>
     <string name="settings">设置</string>
     <string name="open">打开</string>
     <string name="close">关闭</string>
@@ -30,13 +32,61 @@
     <string name="latname">名</string>
     <string name="nickname">昵称</string>
     <string name="idcard">身份证号码</string>
+    <string name="idcard_again">再次输入身份证号码</string>
     <string name="sex">性别</string>
     <string name="man">男</string>
     <string name="woman">女</string>
     <string name="upload_photo">上传身份证照片</string>
     <string name="idcard_forgrond_photo">请上传身份证前照</string>
     <string name="idcard_backgrond_photo">请上传身份证后照</string>
+    <string name="upload_audit">上传审核</string>
     <string name="nodata">没有数据</string>
+    <string name="email_can_not_null">邮箱不能为空</string>
+    <string name="password_can_not_null">邮箱不能为空</string>
+    <string name="email_theme">这是邮件的主题部分</string>
+    <string name="eamil_content">这是邮件的正文部分</string>
+    <string name="email_app_select">请选择邮件类应用</string>
+    <string name="select_camera">相机</string>
+    <string name="select_photo">从相册中选取</string>
+    <string name="cancle">取消</string>
+    <string name="queding">确定</string>
 
 
+    <string name="update">版本更新</string>
+    <string name="version">版本信息</string>
+    <string name="banbengming">当前版本号：</string>
+    <string name="exit">退出当前账号</string>
+    <string name="clear_cache">清除应用相机照片</string>
+    <string name="clear_html_cache">清除所有缓存的网页和图片</string>
+    <string name="clear_html_cache_success">已经清除所有网页和图片缓存。</string>
+    <string name="no_cache">没有缓存照片了</string>
+    <string name="is_sure_clear_cache">确定要清除所有的照片吗？</string>
+    <string name="clear_cache_size">共释放存储空间：</string>
+    <string name="clear_cache_falut">未知原因释放失败！</string>
+
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

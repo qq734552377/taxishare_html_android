@@ -151,8 +151,7 @@
                 android:id="@+id/regist_to_server"
                 style="@style/FullScrennButton"
                 android:layout_marginTop="16dp"
-                android:text="@string/sign_in"
-                android:clickable="false"
+                android:text="@string/upload_audit"
                 android:textStyle="bold"/>
 
 
