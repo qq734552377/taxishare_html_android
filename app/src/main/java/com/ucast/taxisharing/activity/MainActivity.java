@@ -296,7 +296,7 @@ public class MainActivity extends AppCompatActivity {
                     mUploadMessage = null;
                 }
                 if (cameraOrPhoto != null){
-                    cameraOrPhoto.cancel();
+//                    cameraOrPhoto.cancel();
                 }
             break;
             case Camera_SELECT_CODE:
@@ -314,7 +314,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 cameraPath = null;
                 if (cameraOrPhoto != null){
-                    cameraOrPhoto.cancel();
+//                    cameraOrPhoto.cancel();
                 }
                 break;
         }

@@ -69,14 +69,14 @@ public class MyDialog {
 //        i.addCategory(Intent.CATEGORY_OPENABLE);
                 i.setType("image/*");
                 ((AppCompatActivity)context).startActivityForResult(Intent.createChooser(i, "File Chooser"), MainActivity.FILE_SELECT_CODE);
-
+                mCameraDialog.dismiss();
             }
         });
         root.findViewById(R.id.btn_open_camera).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ((MainActivity)context).goToCamera();
-
+                mCameraDialog.dismiss();
             }
         });
         root.findViewById(R.id.btn_cancel).setOnClickListener(new View.OnClickListener() {
@@ -100,11 +100,13 @@ public class MyDialog {
         lp.alpha = 9f; // 透明度
         dialogWindow.setAttributes(lp);
 //        mCameraDialog.show();
-        mCameraDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+        mCameraDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+
             @Override
-            public void onDismiss(DialogInterface dialog) {
+            public void onCancel(DialogInterface dialog) {
                 ((MainActivity)context).fileCallbackRelease();
             }
+
         });
         return mCameraDialog;
     }
